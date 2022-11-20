@@ -14,6 +14,7 @@ console.log(response.data[0]);
         event.preventDefault()
         alert(`searching ${keyWord}`);        
     }
+    //   https://api.dictionaryapi.dev/api/v2/entries/en/hello
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(url).then(handleResponse);
    
