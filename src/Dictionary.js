@@ -14,13 +14,16 @@ export default function Dictionary(){
     }
 
     return(
-        <div className="Dictionary">    
-         <label for="exampleInputEmail1" class="form-label">What word do you want to find?</label>     
-            <form onSubmit = {search}>
-           
-                <input type = "search" onChange = {handleKeywordChange} autoFocus = {true}/>
-               
-            </form>
+        <div className="container dictionary">    
+          <div class="row justify-content-center">
+             <div class="col text-center">
+                    <form  onSubmit = {search}>
+                        <label for="exampleInputEmail" className="form-label">What word do you want to find?</label>    
+                        <input type = "search" className="form-control" onChange = {handleKeywordChange} autoFocus = {true}/>
+                    
+                    </form>          
+             </div>
+          </div>
         </div>
     )
 }
