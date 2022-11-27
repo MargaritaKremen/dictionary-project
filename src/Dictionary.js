@@ -1,13 +1,14 @@
 import React , { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
-
+import Results from "./Results";
 
 export default function Dictionary(){
     let [keyWord, setKeyword] = useState(" ");
-
+    let [results, setResults] = useState(null);
     function handleResponse(response){
-console.log(response.data[0]);
+        console.log(response.data[0]);
+        setResults(response.data[0]);
     }
 
     function search(event){
@@ -31,7 +32,8 @@ console.log(response.data[0]);
                         <label for="exampleInputEmail" className="form-label">What word do you want to find?</label>    
                         <input type = "search" className="form-control" onChange = {handleKeywordChange} autoFocus = {true}/>
                     
-                    </form>          
+                    </form>   
+                    <Results results={results}/>       
              </div>
           </div>
         </div>
