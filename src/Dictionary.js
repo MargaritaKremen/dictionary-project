@@ -12,13 +12,12 @@ export default function Dictionary(){
     }
 
     function search(event){
-        event.preventDefault()
-        alert(`searching ${keyWord}`);        
-    }
+        event.preventDefault()     
+    
     //   https://api.dictionaryapi.dev/api/v2/entries/en/hello
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(url).then(handleResponse);
-   
+   }
 
     function handleKeywordChange(event){
         setKeyword(event.target.value)
