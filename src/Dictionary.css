@@ -1,3 +1,22 @@
 .dictionary{
     max-width: 500px;
 }
+.dictionary section{
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgba(0,10,10,0.1);
+    margin: 20px 0;
+    color: rgba(42, 42, 97, 0.803);
+    text-align: left;
+}
+.dictionary input{
+    width: 100%;    
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgba(0,10,10,0.1);
+    color: #6f7dfb;
+    padding: 6px 10px;
+    margin: 5px;
+}
+
