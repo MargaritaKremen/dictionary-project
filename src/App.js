@@ -6,7 +6,9 @@ export default function App() {
     <div className="App">
       <header className="text-center">       
        <h1>Dictionary</h1>
-       <Dictionary defaultKeyword = "sunset"/>
+        <main>
+          <Dictionary defaultKeyword = "sunset"/>
+        </main>
       </header>
       <footer>
         Developed by Margarita Kozlova

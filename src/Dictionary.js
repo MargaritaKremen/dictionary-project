@@ -4,7 +4,7 @@ import "./Dictionary.css";
 import Results from "./Results";
 
 export default function Dictionary(props){
-    let [keyWord, setKeyword] = useState("sunset");
+    let [keyWord, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
 
@@ -41,7 +41,8 @@ function handleKeywordChange(event){
                 <section>
                     <form  onSubmit = {handleSubmit}>
                         <label for="exampleInputEmail" className="form-label-form-text-color:#6f7dfb ms-2" >What word do you want to find?</label>    
-                        <input type = "search" className="form-control border" onChange = {handleKeywordChange} autoFocus = {true}/>
+                        <input type = "search" className="form-control border" onChange = {handleKeywordChange}
+                         defaulValue={props.defaultKeyword} autoFocus = {true}/>
                     
                     </form> 
                 </section>
