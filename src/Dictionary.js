@@ -52,7 +52,7 @@ function handleKeywordChange(event){
                     <form  onSubmit = {handleSubmit}>
                         <label for="exampleInputEmail" className="form-label-form-text-color:#6f7dfb ms-2" >What word do you want to find?</label>    
                         <input type = "search" className="form-control border" onChange = {handleKeywordChange}
-                         defaulValue={props.defaultKeyword} autoFocus = {true}/>
+                         defaultValue={props.defaultKeyword} autoFocus = {true}/>
                     
                     </form> 
                 </section>
