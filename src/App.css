@@ -5,6 +5,7 @@ h1{
 footer{
   color: blue;
   text-align: center;
+  margin: 20px;
 }
 .App{
   max-width: 960px;
