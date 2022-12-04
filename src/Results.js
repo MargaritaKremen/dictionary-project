@@ -5,6 +5,7 @@ import "./Results.css";
 import "./Dictionary.css";
 
 export default function Results(props){
+    console.log(props);
     if (props.results){
         return(
             <div className="Results">

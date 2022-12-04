@@ -55,7 +55,7 @@ function handleKeywordChange(event){
                          defaultValue={props.defaultKeyword} autoFocus = {true}/>
                     
                     </form> 
-                </section>
+                </section>                
                     <Results results={results}/>  
                     <Photos photos = {photos} />     
              </div>
